@@ -1,19 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import PlaceTable from "./PlaceTable";
 
-class MyPlaces extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div className="MyPlaces">
-        <h1>My Prop is {this.props.places}.</h1>
-        <button id={this.props.key} onClick={this.props.handleOnClick}>
-          Change My State
-        </button>
-      </div>
-    );
-  }
-}
+export const MyPlaces = props => {
+  return (
+    <div className="MyPlaces">
+      <PlaceTable places={props.places} />
+    </div>
+  );
+};
 
 export default MyPlaces;

@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+Table {
+  border: 2px green solid;
+  width:auto;
+}
+
+.cell {
+  border: 2px green solid;
+  width: 250px;
+}

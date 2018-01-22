@@ -4,7 +4,7 @@ import "./App.css";
 import { Router, Route, Switch } from "react-router";
 import Header from "./components/Header";
 import MyPlaces from "./components/MyPlaces";
-import NewPlace from "./components/addANewPlace";
+import NewPlace from "./components/AddANewPlace";
 
 class App extends Component {
   constructor() {
@@ -26,7 +26,26 @@ class App extends Component {
     // this is where the API requests go
     // this is how you make it render database info on load
     this.setState({
-      places: ["New York ", "Providence ", "Denver "]
+      places: [
+        {
+          name: "Sin",
+          heart: true,
+          notes: "good coffee",
+          checkmark: true
+        },
+        {
+          name: "Schastea",
+          heart: true,
+          notes: "great tea",
+          checkmark: true
+        },
+        {
+          name: "Coffee Exchange",
+          heart: true,
+          notes: "great coffee",
+          checkmark: false
+        }
+      ]
     });
   }
 
@@ -46,7 +65,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        {this.loopOverPlaces()}
+        <MyPlaces places={this.state.places} />
         <NewPlace />
       </div>
     );
