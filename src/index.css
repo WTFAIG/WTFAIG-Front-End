@@ -6,10 +6,11 @@ body {
 
 Table {
   border: 2px green solid;
+  margin: 20px;
   width:auto;
 }
 
 .cell {
   border: 2px green solid;
-  width: 250px;
+  width: 75%;
 }

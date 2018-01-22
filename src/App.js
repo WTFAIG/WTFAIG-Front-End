@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Router, Route, Switch } from "react-router";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import MyPlaces from "./components/MyPlaces";
 import NewPlace from "./components/AddANewPlace";
+import Login from "./components/Login";
+import LikedPlaces from "./components/LikedPlaces";
 
 class App extends Component {
   constructor() {
@@ -63,11 +65,19 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <MyPlaces places={this.state.places} />
-        <NewPlace />
-      </div>
+      <Router>
+        <div>
+          <Header />
+
+          <Route path="/" component={Login} />
+          <Route path="/addPlace" component={NewPlace} />
+          <Route
+            path="/myPlaces"
+            render={() => <MyPlaces places={this.state.places} />}
+          />
+          <Route path="/likedPlaces" component={LikedPlaces} />
+        </div>
+      </Router>
     );
   }
 }
