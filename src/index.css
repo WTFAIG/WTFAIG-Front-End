@@ -7,10 +7,10 @@ body {
 Table {
   border: 2px green solid;
   margin: 20px;
-  width:auto;
+  width: 100%;
 }
 
-.cell {
+.box {
   border: 2px green solid;
-  width: 75%;
+  width: 100px;
 }

@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import MyPlaces from "./components/MyPlaces";
 import NewPlace from "./components/AddANewPlace";
-import Login from "./components/Login";
+import LoginView from "./components/LoginView";
 import LikedPlaces from "./components/LikedPlaces";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 class App extends Component {
   constructor() {
@@ -69,13 +71,15 @@ class App extends Component {
         <div>
           <Header />
 
-          <Route path="/" component={Login} />
+          <Route exact path="/" component={LoginView} />
           <Route path="/addPlace" component={NewPlace} />
           <Route
             path="/myPlaces"
             render={() => <MyPlaces places={this.state.places} />}
           />
           <Route path="/likedPlaces" component={LikedPlaces} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
         </div>
       </Router>
     );

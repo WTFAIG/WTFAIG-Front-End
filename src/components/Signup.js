@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Button, Checkbox, Form } from "semantic-ui-react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-const Login = () => (
+const Signup = () => (
   <div>
-    <Link to="/signup">
-      <Button type="button" id="sign-up-btn">
-        Sign up
+    <Link to="/login">
+      <Button type="button" id="login-btn">
+        Login
       </Button>
     </Link>
     <Form>
@@ -18,9 +18,13 @@ const Login = () => (
         <label>Password</label>
         <input placeholder="Password" />
       </Form.Field>
-      <Button type="submit">Log in</Button>
+      <Form.Field>
+        <label>Re-enter Password</label>
+        <input placeholder="Re-enter Password" />
+      </Form.Field>
+      <Button type="submit">Sign Up</Button>
     </Form>
   </div>
 );
 
-export default Login;
+export default Signup;

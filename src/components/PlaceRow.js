@@ -5,10 +5,10 @@ export const PlaceRow = props => {
   return (
     <div className="PlaceRow">
       <Table.Row>
-        <Table.Cell className="cell">{props.name}</Table.Cell>
-        <Table.Cell className="cell">{props.heart}</Table.Cell>
-        <Table.Cell className="cell">{props.notes}</Table.Cell>
-        <Table.Cell className="cell">
+        <Table.Cell className="box">{props.name}</Table.Cell>
+        <Table.Cell className="box">{props.heart}</Table.Cell>
+        <Table.Cell className="box">{props.notes}</Table.Cell>
+        <Table.Cell className="box">
           <Checkbox checked={props.checkmark} Lable="Visited" />
         </Table.Cell>
       </Table.Row>

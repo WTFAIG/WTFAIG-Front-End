@@ -20,10 +20,10 @@ export const PlaceTable = props => {
       <Table>
         <Table.Header width={10}>
           <Table.Row>
-            <Table.HeaderCell className="cell">Place</Table.HeaderCell>
-            <Table.HeaderCell className="cell">HEART</Table.HeaderCell>
-            <Table.HeaderCell className="cell">Notes</Table.HeaderCell>
-            <Table.HeaderCell className="cell">Visited</Table.HeaderCell>
+            <Table.HeaderCell className="box">Place</Table.HeaderCell>
+            <Table.HeaderCell className="box">HEART</Table.HeaderCell>
+            <Table.HeaderCell className="box">Notes</Table.HeaderCell>
+            <Table.HeaderCell className="box">Visited</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>{renderPlaces(props)}</Table.Body>
