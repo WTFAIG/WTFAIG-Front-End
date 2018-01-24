@@ -7,7 +7,7 @@ import MyPlaces from "./components/MyPlaces";
 import NewPlace from "./components/AddANewPlace";
 import LoginView from "./components/LoginView";
 import LikedPlaces from "./components/LikedPlaces";
-import Signup from "./components/Signup";
+import SignupForm from "./components/SignupForm";
 import Login from "./components/Login";
 
 class App extends Component {
@@ -78,8 +78,8 @@ class App extends Component {
             render={() => <MyPlaces places={this.state.places} />}
           />
           <Route path="/likedPlaces" component={LikedPlaces} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignupForm} />
+          <Route path="/login" component={LoginView} />
         </div>
       </Router>
     );
