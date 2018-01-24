@@ -7,9 +7,13 @@ body {
 Table {
   border: 2px green solid;
   margin: 20px;
-  width: 100%;
+  width: 75%;
 }
 
+.tablehead {
+  border: 2px green solid;
+  width: 100px;
+}
 .box {
   border: 2px green solid;
   width: 100px;
