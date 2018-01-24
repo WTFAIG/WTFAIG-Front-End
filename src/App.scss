@@ -2,10 +2,22 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+Table {
+  border: 2px green solid;
+  margin: 20px;
+  width: 75%;
 }
+
+.tablehead {
+  border: 2px green solid;
+  width: 100px;
+}
+
+.box {
+  border: 2px green solid;
+  width: 100px;
+}
+
 
 .App-header {
   background-color: #222;
